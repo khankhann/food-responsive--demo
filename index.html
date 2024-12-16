@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurent Food</title>
+    <link rel="stylesheet" href="./fonts/fontawesome-free-6.5.1-web/css/all.min.css">
+    <link rel="stylesheet" href="./sytle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <header>
+        <a href="#" class="logo"><i class="fa-solid fa-utensils"></i>khan@Restaurent</a>
+        <nav class="navbar">
+            <a class="active" href="#home">home</a>
+            <a href="#dishes">dishes</a>
+            <a href="#about">about</a>
+            <a href="#menu">menu</a>
+            <a href="#review">review</a>
+            <a href="#order">order</a>
+
+        </nav>
+        <div class="icon">
+            <i id="menu-bars" class="fa-solid fa-bars"></i>
+            <i id="search-icon" class="fa-solid fa-magnifying-glass"></i>
+            <a href="#" class="heart"><i class="fa-solid fa-heart"></i></a>
+            <a href="#" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a class="btn-sign-up"><i class="fa-solid fa-user-tie"></i> Nguyen khang</a>
+        </div>
+
+
+
+    </header>
+
+
+
+
+    <!-- xong phần header-->
+
+
+    <form action="" id="search-form">
+        <input id="search-box" placeholder="Nhập món bạn tìm kiếm..." type="search" name="">
+        <label class="fas fa-search" for="search-box"></label>
+        <i class="fas fa-times" id="close"></i>
+    </form>
+
+
+    <!--
+<div class="auth-form" id="sign-form">
+    <div class="auth-form__container">
+        <div class="auth-form__header">
+            <i class=""></i>
+            <h3 class="auth-form__dangky">register</h3>
+            <span class="auth-form__dangnhap auth-form__switch-btn">Login</span>
+        </div>
+        <div class="auth-form__form">
+            <div class="auth-form__group">
+                <input type="text" class="auth-form__input" placeholder=" enter your email">
+            </div>
+            <div class="auth-form__group">
+                <input type="text" class="auth-form__input" placeholder="  enter your number">
+            </div>
+            <div class="auth-form__group">
+                <input type="text" class="auth-form__input" placeholder="  password">
+            </div>
+        </div>
+        <div class="auth-form__aside">
+            <p class="auth-form__text">
+                By Signing Up, You Agree To The Restaurant's
+                <a href="" class="auth-form__link">Terms Of Service </a>&
+                
+                <a href="" class="auth-form__link2"> Privacy Policy</a>
+            </p>
+        </div>
+        <div class="auth-form__controls">
+            <button class="btn btn1 " >BACK</button>
+            <button class="btn btn2"> RESGISTER</button>
+        </div>
+    </div>
+        <div class="auth-form__social">
+        <button class="btn btn3 btn5 btn-size">
+            <i class="social-icon fa-brands fa-facebook"></i>
+           <span class="titlesocial">register with Facebook</span>
+        </button>
+        <button class="btn btn3 btn4 btn-size">
+            <i class="social-icon fa-brands fa-google"></i>
+            <span class="titlesocial">register with Google</span>
+        </button>
+
+        </div>
+    </div> 
+-->
+    <!--
+<div class="auth-form1">
+    <div class="auth-form__container">
+        <div class="auth-form__header">
+            <h3 class="auth-form__dangky">LOGIN</h3>
+            <span class="auth-form__dangnhap auth-form__switch-btn">RESGISTER</span>
+        </div>
+        <div class="auth-form__form">
+            <div class="auth-form__group">
+                <input type="text" class="auth-form__input" placeholder=" enter email">
+            </div>
+           
+            <div class="auth-form__group">
+                <input type="text" class="auth-form__input" placeholder="  password">
+            </div>
+        </div>
+        <div class="auth-form__aside1">
+            <p class="auth-form__text1">
+                
+                <a href="" class="auth-form__link3 auth-form__gach">Forgot password </a>
+                
+                <a href="" class="auth-form__link4">  Need help? ?</a>
+            </p>
+        </div>
+        <div class="auth-form__controls">
+            <button class="btn btn1 " >BACK</button>
+            <button class="btn btn2">LOGIN</button>
+        </div>
+    </div>
+        <div class="auth-form__social1">
+            <button class=" btn6 btnchung ">
+                <i class="social-icon1 fa-solid fa-comment-sms"></i>
+                <span class="titlesocial1">SMS</span>
+            </button>
+        <button class=" btn7 btnchung">
+            <i class="social-icon1 fa-brands fa-facebook"></i>
+           <span class="titlesocial1">  Facebook</span>
+        </button>
+        <button class=" btn8 btnchung">
+            <i class="social-icon1 fa-brands fa-google"></i>
+            <span class="titlesocial1">Google</span>
+        </button>
+
+        </div>
+    </div>  
+
+-->
+
+    <section class="home" id="home">
+        <div class="swiper mySwiper home-slider">
+            <div class="swiper-wrapper wraper">
+                <!-- box1-->
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>our special dish</span>
+                        <h3>hamburger</h3>
+                        <p>hamburger</p>
+                        <a href="#" class="btn">order now</a>
+                    </div>
+                    <div class="image">
+                        <img src="./image/hamburger.jpg" alt="">
+                    </div>
+                </div>
+                <!-- box 2-->
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>do you want to try?</span>
+                        <h3>BBQ chicken</h3>
+                        <p>Chicken</p>
+                        <a href="#" class="btn">order now</a>
+                    </div>
+                    <div class="image">
+                        <img src="./image/grilled-chicken.jpg" alt="">
+                    </div>
+                </div>
+                <!-- box3-->
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>Are you having a party?</span>
+                        <h3>noodles</h3>
+                        <p>Pizza </p>
+                        <a href="#" class="btn">order now</a>
+                    </div>
+                    <div class="image">
+                        <img src="./image/a138e6c293fe233a25751b844b4e63dc.png" alt="">
+                    </div>
+                </div>
+
+
+
+
+
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+        </div>
+    </section>
+
+    <!--section dishes-->
+
+    <section class="dishes" id="dishes">
+        <h3 class="sub-heading"> Menu us </h3>
+        <h1 class="heading"> Today's special menu</h1>
+        <div class="box-container">
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="./image/chao.jpg" alt="">
+                <h3>chicken soup</h3>
+                <div class="starts">
+                    <i class="fas fa-star"></i>
+
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+
+
+                </div>
+                <span>40.000 vnd</span>
+                <a href="#" class="btn"> add to cart</a>
+            </div>
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="./image/suonnuong.jpg" alt="">
+                <h3>grilled ribs rice</h3>
+                <div class="starts">
+                    <i class="fas fa-star"></i>
+
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+
+
+                </div>
+                <span>50.000 vnd</span>
+                <a href="#" class="btn"> add to cart</a>
+            </div>
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="./image/lauhaisan.jpg" alt="">
+                <h3>seafood hotpot</h3>
+                <div class="starts">
+                    <i class="fas fa-star"></i>
+
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+
+
+                </div>
+                <span>350.000 vnd</span>
+                <a href="#" class="btn"> add to cart</a>
+            </div>
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="./image/bun-cha.jpg" alt="">
+                <h3>fish noodles</h3>
+                <div class="starts">
+                    <i class="fas fa-star"></i>
+
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+
+
+                </div>
+                <span>55.000 vnd</span>
+                <a href="#" class="btn"> add to cart</a>
+            </div>
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="./image/banhcuonnong.jpg" alt="">
+                <h3>rice rolls with sausage</h3>
+                <div class="starts">
+                    <i class="fas fa-star"></i>
+
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+
+
+                </div>
+                <span>45.000 vnd</span>
+                <a href="#" class="btn"> add to cart</a>
+            </div>
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="./image/bachtuotnuong.jpg" alt="">
+                <h3>Grilled octopus</h3>
+                <div class="starts">
+                    <i class="fas fa-star"></i>
+
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+
+
+                </div>
+                <span>75.000 vnd</span>
+                <a href="#" class="btn"> add to cart</a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!--About-->
+    <section class="about" id="about">
+        <h3 class="sub-heading"> about us</h3>
+        <h1 class="heading"> HISTORY RESTAURENT</h1>
+        <div class="swiper mySwiper">
+            <div class="swiper-rows">
+                <div class="row">
+                    <div class="images">
+                        <img src="./image/nha-hang-san-vuon-mana-284995.jpg" alt="">
+                    </diV>
+                    <div class="content">
+                        <h3>best food in the coutry</h3>
+                        <p>Celebrating its 10th anniversary, restaurant had become a staple in the Vietnamese dining
+                            scene, known for its extensive menu that includes a variety of regional specialties from
+                            across Vietnam. - *Present*: Today, Quán Ăn Ngon continues to be a favorite among food
+                            enthusiasts, maintaining its commitment to quality and authenticity. The restaurant chain
+                            has grown, with multiple locations in major cities, each offering a delightful culinary
+                            journey through Vietnam's rich gastronomic heritage.</p>
+                        <div class="icon-container">
+                            <div class="icons">
+                                <i class="fas fa-shipping-fast"></i>
+                                <span> free delivery</span>
+                            </div>
+                            <div class="icons">
+                                <i class="fas fa-dollar-sign"></i>
+                                <span> easy payment</span>
+                            </div>
+                            <div class="icons">
+                                <i class="fas fa-headset"></i>
+                                <span> 24/7 service</span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn">learn more</a>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- menu section start-->
+    <section class="menu" id="menu">
+        <h3 class="sub-heading"> Menu us</h3>
+        <h1 class="heading"> today's speciality</h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="./image/bun_bo.webp" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="starts">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3>Beef rice noodles</h3>
+                    <p>Broth: Beef bones, lemongrass, shallots, onions, fermented shrimp paste, chili oil, fish sauce.
+
+                        <br>Protein: Beef brisket, beef shank, pork hock, pork blood cubes (optional).
+
+                        <br>Noodles and Garnishes*: Rice vermicelli noodles, bean sprouts, herbs (mint, cilantro,
+                        basil), lime wedges, chili slices, green onions, cilantro.
+                    </p>
+                    <a class="btn" href="#">add to cart</a>
+                    <span class="price">50.000 vnd</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="./image/Pho-Cuon.jpg" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="starts">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3>hot rice flour rolls</h3>
+                    <p>hot rice flour rolls consists of rice flour, tapioca flour, water, minced pork, wood ear
+                        mushrooms, shallots, garlic, fish sauce, and dipping sauce with lime, sugar, chili, and garlic.
+                    </p>
+                    <a class="btn" href="#">add to cart</a>
+                    <span class="price">40.000 vnd</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="./image/VNO_Pho1.jpg" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="starts">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3>noodle soup</h3>
+                    <p>noodle soup typically includes rice noodles, beef broth (slow-cooked with spices like star anise,
+                        cinnamon, cloves), thinly sliced beef (often raw or cooked in the hot broth), onions, scallions,
+                        and garnishes like bean sprouts, basil, lime, and chili.</p>
+                    <a class="btn" href="#">add to cart</a>
+                    <span class="price">60.000 vnd</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="./image/photo.jpg" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="starts">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3>bread</h3>
+                    <p>The basic ingredients of a Vietnamese bread include: French baguette (crispy crust and soft
+                        interior), pork or chicken cold cuts, mayonnaise or pate, pickled carrots and daikon radish,
+                        cilantro, and dipping sauce (like fish sauce or chili sauce).</p>
+                    <a class="btn" href="#">add to cart</a>
+                    <span class="price">30.000 vnd</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="./image/image-14.jpeg" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="starts">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3>pancakes</h3>
+                    <p>Thank you Sir. I watched this video when it came out, and since then I have learned that
+                        restaurants are very happy to pay for a website that will bring more customers</p>
+                    <a class="btn" href="#">add to cart</a>
+                    <span class="price">40.000 vnd</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="./image/bun-dau-mam-tom-3.jpg" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="starts">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3>bean vermicelli</h3>
+                    <p>Thank you Sir. I watched this video when it came out, and since then I have learned that
+                        restaurants are very happy to pay for a website that will bring more customers</p>
+                    <a class="btn" href="#">add to cart</a>
+                    <span class="price">50.000 vnd</span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!--review section  -->
+    <section class="review" id="review">
+        <h3 class="sub-heading"> customer's review</h3>
+        <h1 class="heading"> what they say about us</h1>
+        <div class="swiper-container review-slider">
+            <div class="swiper-wraper">
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="./image/avatar1.jpg" alt="">
+                        <div class="user-info">
+                            <div class="user-infos">
+
+                                <h3>nguyen </h3>
+                                <h4>Age: 26</h4>
+                            </div>
+
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Restaurant is a fantastic spot for traditional Vietnamese cuisine. I tried their pho and was
+                        impressed by the rich broth and fresh flavors of the meat. The cozy atmosphere and attentive
+                        service made dining here a memorable experience.</p>
+                    <div class="react">
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-comment"> </i>
+                        <i class="fas fa-share"></i>
+                    </div>
+                </div>
+
+
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="./image/avata3.jpg" alt="">
+                        <div class="user-info">
+                            <div class="user-infos">
+
+                                <h3>michel </h3>
+                                <h4>Age: 32</h4>
+                            </div>
+
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>The banh mi at Restaurant stands out with its crispy baguette and flavorful pork cold cuts. I
+                        also appreciated the quick and friendly service, which made each visit comfortable and
+                        satisfying.</p>
+                    <div class="react">
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-comment"> </i>
+                        <i class="fas fa-share"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="./image/avata2.jpg" alt="">
+                        <div class="user-info">
+                            <div class="user-infos">
+
+                                <h3>hitman </h3>
+                                <h4>Age: 20</h4>
+                            </div>
+
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Yesterday, I tried the hot banh cuon at Restaurant and couldn't be happier with the delicate
+                        preparation of thin, soft rice rolls filled with savory pork. This is a dining spot I would
+                        highly recommend.</p>
+                    <div class="react">
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-comment"> </i>
+                        <i class="fas fa-share"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="./image/avatar1.jpg" alt="">
+                        <div class="user-info">
+                            <div class="user-infos">
+
+                                <h3>Paul parker </h3>
+                                <h4>Age: 30</h4>
+                            </div>
+
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>I had the pleasure of dining at Restaurant XYZ last weekend and indulged in their delicious
+                        spring rolls. The freshness of the ingredients and the perfect balance of flavors in each bite
+                        left a lasting impression. The restaurant's ambiance was inviting, and the staff were courteous
+                        and knowledgeable about the menu, enhancing the overall dining experience.</p>
+                    <div class="react">
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-comment"> </i>
+                        <i class="fas fa-share"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="./image/avata4.jpg" alt="">
+                        <div class="user-info">
+                            <div class="user-infos">
+
+                                <h3>Nguyen Khang </h3>
+                                <h4>Age: 23</h4>
+                            </div>
+
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Restaurant exceeded my expectations with their authentic Vietnamese dishes. The crispy fried
+                        shrimp cakes were a standout dish, crispy on the outside and tender on the inside. Coupled with
+                        their homemade dipping sauce, it was a delightful culinary journey that I can't wait to embark
+                        on again.</p>
+                    <div class="react">
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-comment"> </i>
+                        <i class="fas fa-share"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="./image/avata5.jpg" alt="">
+                        <div class="user-info">
+                            <div class="user-infos">
+
+                                <h3>jonh </h3>
+                                <h4>Age: 25</h4>
+                            </div>
+
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>One of the highlights of my visit to Restaurant was their impeccable coffee. Served with
+                        condensed milk in the traditional Vietnamese style, it was a perfect ending to a satisfying
+                        meal. The attention to detail in every aspect of the dining experience, from food quality to
+                        service, truly sets this restaurant apart."</p>
+                    <div class="react">
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-comment"> </i>
+                        <i class="fas fa-share"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="./image/avata6.jpg" alt="">
+                        <div class="user-info">
+                            <div class="user-infos">
+
+                                <h3>Nguyên Khang </h3>
+                                <h4>Age: 23</h4>
+                            </div>
+
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>You sir are just an angel. I love you! Thank you so much man. I had to give a presentation
+                        tomorrow and the project i had saved for the occasion wasn't working and thanks to you I have
+                        something to show tomorrow. Thank you so much, wishing you health happiness and success. May
+                        this channel hit a million subs. Thanks again, savior :D</p>
+                    <div class="react">
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-comment"> </i>
+                        <i class="fas fa-share"></i>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+
+
+
+    <!--order start -->
+
+
+
+    <section class="order" id="order">
+        <h3 class="sub-heading">order now</h3>
+        <h1 class="heading">free and fast</h1>
+        <form action="">
+            <div class="inputbox">
+                <div class="input">
+                    <span>your name</span>
+                    <input type="text" placeholder="enter your name">
+                </div>
+
+                <div class="input">
+                    <span>your number</span>
+                    <input type="tel" placeholder="enter your number">
+                </div>
+                <div class="inputbox">
+                    <div class="input">
+                        <span>your order</span>
+                        <input type="text" placeholder="enter food name">
+                    </div>
+                    <div class="input">
+                        <span>additional food</span>
+                        <input type="text" placeholder="extra with food">
+                    </div>
+                    <div class="inputbox">
+                        <div class="input">
+                            <span>how much</span>
+                            <input type="number" placeholder="how many order">
+                        </div>
+                        <div class="input">
+                            <span>date and time</span>
+                            <input type="datetime-local">
+                        </div>
+
+                        <div class="inputbox">
+                            <div class="input">
+                                <span>your address</span>
+                                <textarea name="" placeholder="enter your address" id="" cols="30" rows="10"></textarea>
+                            </div>
+
+                            <div class="input">
+                                <span>your message</span>
+                                <textarea name="" placeholder="enter your message" id="" cols="30" rows="10"></textarea>
+                            </div>
+                            <input type="submit" class="btn" value="order now">
+        </form>
+
+    </section>
+
+
+
+    <!--footer stat-->
+
+
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+
+                <h3>location</h3>
+                <a href="#">india</a>
+                <a href="#">japan</a>
+                <a href="#">russia</a>
+                <a href="#">usa</a>
+                <a href="#">france</a>
+            </div>
+            <div class="box">
+
+                <h3>quick links</h3>
+                <a href="#">home</a>
+                <a href="#">dishes</a>
+                <a href="#">about</a>
+                <a href="#">reivew</a>
+                <a href="#">order</a>
+            </div>
+
+            <div class="box">
+
+                <h3>contact info</h3>
+                <a href="#"><i class="fa-solid fa-phone"></i> +84 123 45 678</a>
+                <a href="#"><i class="fa-solid fa-envelope"></i> lenguyenkhang18022001@gmail.com</a>
+                <a href="#"><i class="fa-solid fa-location-dot"></i> ho chi minh, Viet Nam - 100311</a>
+            </div>
+
+            <div class="box">
+
+                <h3>follow us</h3>
+                <a href="#"><i class="fa-brands fa-facebook"></i> facebook </a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i> twitter</a>
+                <a href="#"><i class="fa-brands fa-instagram"></i> instagram</a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i> linkedin</a>
+            </div>
+
+
+            <div class="credit">copyright@2024 by <span>nguyen khang</span></div>
+        </div>
+
+    </section>
+
+
+
+
+
+    <!--loader part-->
+    <!-- <div class="loader-container">
+    <img src="./image/Double Ring@1x-1.0s-200px-200px.gif" alt="">
+</div>-->
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./sript.js"></script>
+</body>
+
+</html>
